@@ -1,0 +1,60 @@
+1. Tú:  ¿Qué come el puma?
+   Bot: El puma es carnívoro. Entre sus presas registradas están: guanaco, huemul, pudú y vicuña.
+
+2. Tú:  ¿Dónde vive el huemul?
+   Bot: El huemul habita en: Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos) y Zona Austral (Aysén y Magallanes). Su hábitat es: bosque templado y cordillera de los Andes.
+
+3. Tú:  ¿El pudú está en peligro de extinción?
+   Bot: El estado de conservación del pudú es: Casi amenazada (UICN). No se considera amenazada.
+
+4. Tú:  ¿Cuál es el nombre científico de la güiña?
+   Bot: El nombre científico de la güiña es Leopardus guigna.
+
+5. Tú:  ¿El degú es endémico de Chile?
+   Bot: Sí, el degú es endémico de Chile: no vive de forma natural en ningún otro país.
+
+6. Tú:  ¿Quién se come al guanaco?
+   Bot: El guanaco es presa de: puma.
+
+7. Tú:  ¿Cuánto pesa un cóndor?
+   Bot: Un cóndor andino adulto pesa aproximadamente 12 kg.
+
+8. Tú:  ¿El monito del monte es nocturno?
+   Bot: El monito del monte es nocturno.
+
+9. Tú:  ¿Vive el picaflor de Arica en la zona sur?
+   Bot: No, el picaflor de Arica no habita en Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos). Vive en: Norte Grande (Arica y Parinacota, Tarapacá y Antofagasta).
+
+10. Tú:  ¿Qué mamíferos amenazados viven en la zona sur?
+   Bot: Especies que cumplen (clase: mamíferos; zona: Zona Sur; amenazadas (VU, EN o CR)): huemul, zorro chilote, güiña, chungungo y huillín.
+
+11. Tú:  ¿Qué animales herbívoros hay en el altiplano?
+   Bot: Especies que cumplen (dieta: herbívoro; ecosistema: altiplano): guanaco y vicuña.
+
+12. Tú:  ¿Cuál es el ave más pequeña?
+   Bot: El más liviano es el picaflor de Arica, con aproximadamente 0.0025 kg.
+
+13. Tú:  ¿Qué pesa más, el puma o el huemul?
+   Bot: El huemul (70 kg) es más pesado que el puma (60 kg).
+
+14. Tú:  ¿Conviven el pudú y el huemul?
+   Bot: Sí, el pudú y el huemul conviven: comparten Zona Austral (Aysén y Magallanes) y Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos), en bosque templado.
+
+15. Tú:  ¿Qué especies tienen prioridad de conservación?
+   Bot: Las especies con prioridad de conservación (endémicas y amenazadas) son: chinchilla de cola larga y zorro chilote.
+
+16. Tú:  ¿Cuál es la cadena alimenticia del degú?
+   Bot: Cadena alimenticia del degú: no depreda a ninguna especie de la base; y es alimento, directo o indirecto, de culebra de cola larga y güiña.
+
+17. Tú:  Háblame del zorro chilote
+   Bot: El zorro chilote (Lycalopex fulvipes) es un mamífero omnívoro. Habita en Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos). Estado de conservación: En peligro. Es endémico de Chile. También se le llama zorro de Darwin, quien lo describió en Chiloé.
+
+18. Tú:  ¿Hay felinos en Chile?
+   Bot: No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe "ayuda" para ver ejemplos de preguntas.
+
+19. Tú:  ¿El puma es peligroso para las personas?
+   Bot: El estado de conservación del puma es: Preocupación menor (UICN). No se considera amenazada.
+
+20. Tú:  ¿Qué come el guanacco?
+   Bot: No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe "ayuda" para ver ejemplos de preguntas.
+
