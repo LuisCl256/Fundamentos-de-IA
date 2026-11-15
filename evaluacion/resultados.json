@@ -1,0 +1,1138 @@
+{
+  "fecha": "2026-11-15 00:56",
+  "llm": {
+    "usado": true,
+    "proveedor": "gemini",
+    "modelo": "gemini-3.5-flash-lite"
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "categoria": "Dieta",
+      "pregunta": "¿Qué come el puma?",
+      "esperado": [
+        "guanaco",
+        "huemul",
+        "pudu",
+        "vicuna"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El puma es carnívoro. Entre sus presas registradas están: guanaco, huemul, pudú y vicuña.",
+        "ms": 33,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 4,
+          "total": 4,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El puma es un animal carnívoro. Según mi base de conocimiento, sus presas registradas son el guanaco, el huemul, el pudú y la vicuña.",
+        "ms": 1969,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 4,
+          "total": 4,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "categoria": "Hábitat",
+      "pregunta": "¿Dónde vive el huemul?",
+      "esperado": [
+        "sur",
+        "austral"
+      ],
+      "prohibido": [
+        "norte grande",
+        "norte chico"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El huemul habita en: Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos) y Zona Austral (Aysén y Magallanes). Su hábitat es: bosque templado y cordillera de los Andes.",
+        "ms": 61,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El huemul vive en la Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos) y en la Zona Austral (Aysén y Magallanes) de Chile. Habita en los ecosistemas de bosque templado y en la cordillera de los Andes.",
+        "ms": 1481,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "categoria": "Conservación",
+      "pregunta": "¿El pudú está en peligro de extinción?",
+      "esperado": [
+        "casi amenazad"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El estado de conservación del pudú es: Casi amenazada (UICN). No se considera amenazada.",
+        "ms": 63,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "No, el pudú tiene estado de conservación Casi amenazada (NT) y no se considera amenazado según la base de conocimiento.",
+        "ms": 779,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "categoria": "Dato puntual",
+      "pregunta": "¿Cuál es el nombre científico de la güiña?",
+      "esperado": [
+        "leopardus guigna"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El nombre científico de la güiña es Leopardus guigna.",
+        "ms": 64,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El nombre científico de la güiña es *Leopardus guigna*.",
+        "ms": 712,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "categoria": "Sí / no",
+      "pregunta": "¿El degú es endémico de Chile?",
+      "esperado": [
+        "endemic"
+      ],
+      "prohibido": [
+        "no es endemic"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Sí, el degú es endémico de Chile: no vive de forma natural en ningún otro país.",
+        "ms": 60,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, el degú es endémico de Chile.",
+        "ms": 832,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "categoria": "Inferencia (regla)",
+      "pregunta": "¿Quién se come al guanaco?",
+      "esperado": [
+        "puma"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El guanaco es presa de: puma.",
+        "ms": 62,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Según la base de conocimiento, el depredador registrado del guanaco es el puma.",
+        "ms": 800,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "categoria": "Dato numérico",
+      "pregunta": "¿Cuánto pesa un cóndor?",
+      "esperado": [
+        "12"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Un cóndor andino adulto pesa aproximadamente 12 kg.",
+        "ms": 58,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El cóndor andino (Vultur gryphus) tiene un peso adulto aproximado de 12 kg.",
+        "ms": 714,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "categoria": "Sí / no",
+      "pregunta": "¿El monito del monte es nocturno?",
+      "esperado": [
+        "nocturn"
+      ],
+      "prohibido": [
+        "no es nocturn"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El monito del monte es nocturno.",
+        "ms": 62,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, el monito del monte es de actividad nocturna.",
+        "ms": 1157,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "categoria": "Sí / no",
+      "pregunta": "¿Vive el picaflor de Arica en la zona sur?",
+      "esperado": [
+        "norte grande"
+      ],
+      "prohibido": [
+        "si, el picaflor de arica habita en la zona sur",
+        "si, vive"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "No, el picaflor de Arica no habita en Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos). Vive en: Norte Grande (Arica y Parinacota, Tarapacá y Antofagasta).",
+        "ms": 53,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "No, el picaflor de Arica habita únicamente en el Norte Grande (Arica y Parinacota, Tarapacá y Antofagasta), según mi base de conocimiento.",
+        "ms": 802,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "categoria": "Listado con varias condiciones",
+      "pregunta": "¿Qué mamíferos amenazados viven en la zona sur?",
+      "esperado": [
+        "huemul",
+        "zorro chilote",
+        "guina",
+        "chungungo",
+        "huillin"
+      ],
+      "prohibido": [
+        "pudu",
+        "monito"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (clase: mamíferos; zona: Zona Sur; amenazadas (VU, EN o CR)): huemul, zorro chilote, güiña, chungungo y huillín.",
+        "ms": 52,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 5,
+          "total": 5,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Los mamíferos amenazados que viven en la zona sur son:\n- huemul\n- zorro chilote\n- chungungo\n- huillín",
+        "ms": 849,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "parcial",
+          "cumplidos": 4,
+          "total": 5,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "categoria": "Listado con varias condiciones",
+      "pregunta": "¿Qué animales herbívoros hay en el altiplano?",
+      "esperado": [
+        "guanaco",
+        "vicuna"
+      ],
+      "prohibido": [
+        "flamenco"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (dieta: herbívoro; ecosistema: altiplano): guanaco y vicuña.",
+        "ms": 49,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "En el ecosistema del altiplano se encuentran los siguientes animales herbívoros:\n- guanaco\n- vicuña\n- flamenco chileno\n\n¿Te gustaría saber más sobre la dieta de alguna de estas especies?",
+        "ms": 1347,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "parcial",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": [
+            "flamenco"
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "categoria": "Superlativo",
+      "pregunta": "¿Cuál es el ave más pequeña?",
+      "esperado": [
+        "picaflor"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El más liviano es el picaflor de Arica, con aproximadamente 0.0025 kg.",
+        "ms": 62,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El picaflor de Arica es una de las aves más pequeñas de Chile, con un peso adulto de aproximadamente 0.0025 kg.",
+        "ms": 833,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 13,
+      "categoria": "Comparación",
+      "pregunta": "¿Qué pesa más, el puma o el huemul?",
+      "esperado": [
+        "70"
+      ],
+      "prohibido": [
+        "puma es mas pesado",
+        "puma pesa mas"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El huemul (70 kg) es más pesado que el puma (60 kg).",
+        "ms": 53,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El huemul pesa más que el puma. El peso adulto del huemul es de aproximadamente 70 kg, mientras que el puma pesa unos 60 kg.",
+        "ms": 795,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 14,
+      "categoria": "Inferencia (regla)",
+      "pregunta": "¿Conviven el pudú y el huemul?",
+      "esperado": [
+        "bosque templado"
+      ],
+      "prohibido": [
+        "no conviven"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Sí, el pudú y el huemul conviven: comparten Zona Austral (Aysén y Magallanes) y Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos), en bosque templado.",
+        "ms": 51,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, conviven. Ambas especies habitan en la Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos) y en la Zona Austral (Aysén y Magallanes). Además, comparten el ecosistema de bosque templado.",
+        "ms": 776,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 15,
+      "categoria": "Inferencia (regla)",
+      "pregunta": "¿Qué especies tienen prioridad de conservación?",
+      "esperado": [
+        "chinchilla",
+        "zorro chilote"
+      ],
+      "prohibido": [
+        "degu",
+        "culebra"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Las especies con prioridad de conservación (endémicas y amenazadas) son: chinchilla de cola larga y zorro chilote.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Las especies que tienen prioridad de conservación (es decir, que son endémicas y amenazadas) son:\n- Chinchilla de cola larga\n- Zorro chilote",
+        "ms": 763,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 16,
+      "categoria": "Inferencia recursiva",
+      "pregunta": "¿Cuál es la cadena alimenticia del degú?",
+      "esperado": [
+        "guina",
+        "culebra"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Cadena alimenticia del degú: no depreda a ninguna especie de la base; y es alimento, directo o indirecto, de culebra de cola larga y güiña.",
+        "ms": 49,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El degú tiene como presas registradas en la base sin registro, y sus depredadores registrados son la güiña y la culebra de cola larga. Además, el degú es depredador del degú (como presa de la güiña y la culebra de cola larga).",
+        "ms": 1292,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "parcial",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": [],
+          "estado_automatico": "correcta",
+          "nota": "Nombra correctamente a la güiña y la culebra de cola larga, pero la explicación es contradictoria (dice que el degú es depredador del degú)."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "categoria": "Descripción general",
+      "pregunta": "Háblame del zorro chilote",
+      "esperado": [
+        "lycalopex fulvipes",
+        "endemic"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El zorro chilote (Lycalopex fulvipes) es un mamífero omnívoro. Habita en Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos). Estado de conservación: En peligro. Es endémico de Chile. También se le llama zorro de Darwin, quien lo describió en Chiloé.",
+        "ms": 47,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El zorro chilote (también conocido como zorro de Darwin) es un mamífero omnívoro de hábitos crepusculares que pesa aproximadamente 3 kg. Habita en la Zona Sur de Chile y se encuentra en el ecosistema de bosque templado. Posee un estado de conservación en peligro (EN), lo que significa que está amenazado, y además es endémico de Chile, por lo que tiene prioridad de conservación. Como dato curioso, también se le llama zorro de Darwin, quien lo describió en Chiloé.",
+        "ms": 860,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "parcial",
+          "cumplidos": 1,
+          "total": 2,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 18,
+      "categoria": "Paráfrasis",
+      "pregunta": "¿Hay felinos en Chile?",
+      "esperado": [
+        "puma",
+        "guina"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe \"ayuda\" para ver ejemplos de preguntas.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 2,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, en Chile hay felinos nativos registrados en la base de conocimiento. Entre ellos se encuentran el puma, la güiña y el zorro chilote (aunque este último es un cánido, los felinos propiamente tal en la base son el puma y la güiña). El puma es el mayor felino del país y la güiña es el felino más pequeño de América.",
+        "ms": 1494,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "parcial",
+          "cumplidos": 2,
+          "total": 2,
+          "prohibidos": [],
+          "estado_automatico": "correcta",
+          "nota": "Menciona al zorro chilote como felino y luego se corrige; los felinos de la base son el puma y la güiña."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "categoria": "Fuera de la base",
+      "pregunta": "¿El puma es peligroso para las personas?",
+      "esperado": [
+        [
+          "no tengo",
+          "no dispongo",
+          "no cuento",
+          "no hay informacion",
+          "no se indica",
+          "no se registra",
+          "no contiene"
+        ]
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El estado de conservación del puma es: Preocupación menor (UICN). No se considera amenazada.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "No tengo esa información en mi base de conocimiento. ¿Te gustaría saber cuál es el peso adulto o qué presas registra el puma?",
+        "ms": 859,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": 20,
+      "categoria": "Error de tipeo",
+      "pregunta": "¿Qué come el guanacco?",
+      "esperado": [
+        "herbivor"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe \"ayuda\" para ver ejemplos de preguntas.",
+        "ms": 51,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El guanaco es herbívoro.",
+        "ms": 754,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    }
+  ],
+  "resumen": {
+    "prolog": {
+      "correctas": 17,
+      "parciales": 0,
+      "incorrectas": 3,
+      "sin_respuesta": 0,
+      "puntaje": 17.0,
+      "total": 20,
+      "tiempo_promedio_ms": 54
+    },
+    "llm": {
+      "correctas": 15,
+      "parciales": 5,
+      "incorrectas": 0,
+      "sin_respuesta": 0,
+      "puntaje": 17.5,
+      "total": 20,
+      "tiempo_promedio_ms": 993
+    }
+  },
+  "robustez": [
+    {
+      "id": "R1",
+      "categoria": "Paráfrasis",
+      "pregunta": "¿Cuál es el felino más pequeño de América?",
+      "esperado": [
+        "guina"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El más liviano es la ranita de Darwin, con aproximadamente 0.002 kg.",
+        "ms": 48,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El felino más pequeño de América es la güiña (*Leopardus guigna*), que pesa aproximadamente 2 kg.",
+        "ms": 756,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R2",
+      "categoria": "Paráfrasis",
+      "pregunta": "¿Qué animal chileno es un marsupial?",
+      "esperado": [
+        "monito"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe \"ayuda\" para ver ejemplos de preguntas.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El monito del monte es el animal chileno que es un marsupial. Es una pequeña especie que hiberna en el bosque templado y se le considera un fósil viviente.",
+        "ms": 835,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R3",
+      "categoria": "Listado",
+      "pregunta": "¿Qué especies son nocturnas?",
+      "esperado": [
+        "chinchilla",
+        "guina",
+        "monito"
+      ],
+      "prohibido": [
+        "puma",
+        "huemul"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (hábito nocturno): chinchilla de cola larga, güiña y monito del monte.",
+        "ms": 49,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 3,
+          "total": 3,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Las especies nocturnas registradas en la base de conocimiento son:\n- Chinchilla de cola larga\n- Güiña\n- Monito del monte",
+        "ms": 680,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 3,
+          "total": 3,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R4",
+      "categoria": "Sí / no",
+      "pregunta": "¿Hay pumas en el Norte Grande?",
+      "esperado": [
+        "norte grande"
+      ],
+      "prohibido": [
+        "no habita",
+        "no vive"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Un puma adulto pesa aproximadamente 60 kg.",
+        "ms": 49,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, hay pumas en el Norte Grande (Arica y Parinacota, Tarapacá y Antofagasta).",
+        "ms": 1167,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R5",
+      "categoria": "Paráfrasis",
+      "pregunta": "¿Qué animal es levemente venenoso?",
+      "esperado": [
+        "culebra"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "No logré entender la pregunta o no tengo esa información en mi base de conocimiento. Escribe \"ayuda\" para ver ejemplos de preguntas.",
+        "ms": 51,
+        "error": null,
+        "evaluacion": {
+          "estado": "incorrecta",
+          "cumplidos": 0,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "La culebra de cola larga es levemente venenosa, aunque no peligrosa para el ser humano.",
+        "ms": 1373,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R6",
+      "categoria": "Listado con varias condiciones",
+      "pregunta": "¿Qué anfibios están amenazados?",
+      "esperado": [
+        "ranita"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (clase: anfibios; amenazadas (VU, EN o CR)): ranita de Darwin.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Los anfibios amenazados en la base de datos son:\n- ranita de Darwin",
+        "ms": 758,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R7",
+      "categoria": "Listado",
+      "pregunta": "¿Qué especies viven en ríos?",
+      "esperado": [
+        "huillin"
+      ],
+      "prohibido": [
+        "chungungo"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (ecosistema: ríos y lagos): huillín.",
+        "ms": 51,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Las especies asociadas a ríos y lagos en mi base de conocimiento son:\n- Huillín",
+        "ms": 782,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R8",
+      "categoria": "Superlativo",
+      "pregunta": "¿Cuál es el mamífero más pesado?",
+      "esperado": [
+        "guanaco"
+      ],
+      "prohibido": [],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "El más pesado es el guanaco, con aproximadamente 110 kg.",
+        "ms": 52,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "El guanaco es el mamífero terrestre nativo más grande de Chile, con un peso adulto aproximado de 110 kg.",
+        "ms": 729,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R9",
+      "categoria": "Listado con varias condiciones",
+      "pregunta": "¿Qué aves están en peligro?",
+      "esperado": [
+        "picaflor"
+      ],
+      "prohibido": [
+        "chucao",
+        "carpintero"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Especies que cumplen (clase: aves; amenazadas (VU, EN o CR)): cóndor andino, picaflor de Arica y pingüino de Humboldt.",
+        "ms": 52,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Las siguientes aves de la base de conocimiento se encuentran en estado En peligro (EN):\n- Picaflor de Arica",
+        "ms": 839,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    },
+    {
+      "id": "R10",
+      "categoria": "Inferencia (regla)",
+      "pregunta": "¿El huillín y el chungungo viven en el mismo lugar?",
+      "esperado": [
+        "costa"
+      ],
+      "prohibido": [
+        "no conviven",
+        "no comparten"
+      ],
+      "prolog": {
+        "motor": "prolog",
+        "texto": "Sí, el huillín y el chungungo conviven: comparten Zona Austral (Aysén y Magallanes) y Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos), en costa marina.",
+        "ms": 50,
+        "error": null,
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      },
+      "llm": {
+        "motor": "llm",
+        "texto": "Sí, ambos coinciden en la Zona Austral (Aysén y Magallanes) y en la Zona Sur (Ñuble, Biobío, Araucanía, Los Ríos y Los Lagos). En cuanto a ecosistemas, el huillín habita en ríos, lagos y costa marina, mientras que el chungungo habita en la costa marina, por lo que comparten el hábitat marino en las zonas del sur y austral de Chile.",
+        "ms": 984,
+        "error": null,
+        "modelo": "gemini-3.5-flash-lite",
+        "evaluacion": {
+          "estado": "correcta",
+          "cumplidos": 1,
+          "total": 1,
+          "prohibidos": []
+        }
+      }
+    }
+  ],
+  "resumen_robustez": {
+    "prolog": {
+      "correctas": 6,
+      "parciales": 0,
+      "incorrectas": 4,
+      "sin_respuesta": 0,
+      "puntaje": 6.0,
+      "total": 10,
+      "tiempo_promedio_ms": 50
+    },
+    "llm": {
+      "correctas": 10,
+      "parciales": 0,
+      "incorrectas": 0,
+      "sin_respuesta": 0,
+      "puntaje": 10.0,
+      "total": 10,
+      "tiempo_promedio_ms": 890
+    }
+  }
+}

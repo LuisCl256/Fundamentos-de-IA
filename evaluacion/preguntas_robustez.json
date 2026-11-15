@@ -1,0 +1,108 @@
+[
+ {
+  "id": "R1",
+  "categoria": "Paráfrasis",
+  "pregunta": "¿Cuál es el felino más pequeño de América?",
+  "esperado": [
+   "guina"
+  ],
+  "prohibido": []
+ },
+ {
+  "id": "R2",
+  "categoria": "Paráfrasis",
+  "pregunta": "¿Qué animal chileno es un marsupial?",
+  "esperado": [
+   "monito"
+  ],
+  "prohibido": []
+ },
+ {
+  "id": "R3",
+  "categoria": "Listado",
+  "pregunta": "¿Qué especies son nocturnas?",
+  "esperado": [
+   "chinchilla",
+   "guina",
+   "monito"
+  ],
+  "prohibido": [
+   "puma",
+   "huemul"
+  ]
+ },
+ {
+  "id": "R4",
+  "categoria": "Sí / no",
+  "pregunta": "¿Hay pumas en el Norte Grande?",
+  "esperado": [
+   "norte grande"
+  ],
+  "prohibido": [
+   "no habita",
+   "no vive"
+  ]
+ },
+ {
+  "id": "R5",
+  "categoria": "Paráfrasis",
+  "pregunta": "¿Qué animal es levemente venenoso?",
+  "esperado": [
+   "culebra"
+  ],
+  "prohibido": []
+ },
+ {
+  "id": "R6",
+  "categoria": "Listado con varias condiciones",
+  "pregunta": "¿Qué anfibios están amenazados?",
+  "esperado": [
+   "ranita"
+  ],
+  "prohibido": []
+ },
+ {
+  "id": "R7",
+  "categoria": "Listado",
+  "pregunta": "¿Qué especies viven en ríos?",
+  "esperado": [
+   "huillin"
+  ],
+  "prohibido": [
+   "chungungo"
+  ]
+ },
+ {
+  "id": "R8",
+  "categoria": "Superlativo",
+  "pregunta": "¿Cuál es el mamífero más pesado?",
+  "esperado": [
+   "guanaco"
+  ],
+  "prohibido": []
+ },
+ {
+  "id": "R9",
+  "categoria": "Listado con varias condiciones",
+  "pregunta": "¿Qué aves están en peligro?",
+  "esperado": [
+   "picaflor"
+  ],
+  "prohibido": [
+   "chucao",
+   "carpintero"
+  ]
+ },
+ {
+  "id": "R10",
+  "categoria": "Inferencia (regla)",
+  "pregunta": "¿El huillín y el chungungo viven en el mismo lugar?",
+  "esperado": [
+   "costa"
+  ],
+  "prohibido": [
+   "no conviven",
+   "no comparten"
+  ]
+ }
+]

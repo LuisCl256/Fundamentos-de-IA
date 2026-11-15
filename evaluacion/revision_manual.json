@@ -1,0 +1,4 @@
+{
+  "16": {"llm": {"estado": "parcial", "nota": "Nombra correctamente a la güiña y la culebra de cola larga, pero la explicación es contradictoria (dice que el degú es depredador del degú)."}},
+  "18": {"llm": {"estado": "parcial", "nota": "Menciona al zorro chilote como felino y luego se corrige; los felinos de la base son el puma y la güiña."}}
+}
