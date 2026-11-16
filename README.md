@@ -15,20 +15,20 @@ El informe está en `docs/Informe_Entrega1_Fauna_Chile.docx`.
 
 4. Chatbot con un LLM en Python que responde usando el mismo conocimiento de `prolog/kb.pl` y `prolog/reglas.pl` (`backend/motor_llm.py`).
 5. Interfaz web para usar el chatbot Prolog, el LLM o ambos lado a lado (`frontend/` + `backend/app.py`).
-6. Evaluación con las 20 preguntas de la Entrega 1 (más 10 de robustez) e informe de desempeño: `docs/Informe_Entrega2_Fauna_Chile.docx`.
+6. Evaluación con las 20 preguntas de la Entrega 1, más 10 preguntas adicionales e informe de desempeño: `docs/Informe_Entrega2_Fauna_Chile.docx`.
 
 El chatbot Prolog de la Entrega 1 no se modificó: se agregó `prolog/api.pl` para usarlo desde Python.
 
 ## Requisitos
 
 - [SWI-Prolog](https://www.swi-prolog.org/download/stable) 9.x
-- Python 3.10+ (solo para la Entrega 2)
+- Python 3.10+
 
 ## Uso
 
 ```bash
 cd prolog
-swipl main.pl # conversación interactiva ("salir" para terminar)
+swipl main.pl # conversación interactiva, utilizar "salir" para terminar
 swipl pruebas.pl # ejecuta el set de 20 preguntas de prueba
 ```
 
@@ -44,10 +44,10 @@ Desde la consola de Prolog:
 ## Entrega 2: instalación y uso
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
+python3 -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env        # pegar la API key del LLM (Gemini gratis: https://aistudio.google.com/apikey)
-python -m backend.app       # abrir http://localhost:5000
+cp .env.example .env  # pegar la API key del LLM (Gemini gratis: https://aistudio.google.com/apikey)
+python -m backend.app  # abrir http://localhost:5000
 ```
 
 Evaluación (corre las 30 preguntas en ambos chatbots y regenera el informe):
